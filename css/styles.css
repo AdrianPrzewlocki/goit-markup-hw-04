@@ -120,7 +120,9 @@ ul {
 /* main  - title */
 
 .main__title {
-    background-color: var(--background-dark);
+    background-image: url('/images/image_background.jpg');
+    background-size: cover;
+    box-shadow: inset rgba(47, 48, 58, 0.4);
 }
 
 .title__container {
@@ -181,6 +183,11 @@ ul {
     list-style-type: none;
     gap: 30px;
     line-height: 1.6;
+}
+
+.assets__list svg {
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 
 .title__asset {
@@ -255,6 +262,24 @@ ul {
     text-align: center;
     letter-spacing: 00.03em;
     
+}
+
+.social_item {
+    
+}
+
+/* Our clients */
+
+.client__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client__item {
+    list-style-type: none;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 /* PORTFOLIO SITE*/
