@@ -44,6 +44,12 @@ ul {
     padding: 0;
 }
 
+.subtitle {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+}
+
 /* header */
 
 .header {
@@ -104,18 +110,27 @@ ul {
     list-style-type: none;
     margin-left: auto;
     gap: 50px;
-} 
+}
 
 .top__item {
+    display: flex;
     color: var(--color-text);
     text-decoration: none;
-    
+}
+
+.icon__contact {
+    margin-right: 10px;
+    color: var(--color-text);
 }
 
 .top__item:hover,
-.top__item:focus {
-    color: var(--color-hover);
+.top__item:focus,
+.icon__contact:hover,
+.icon__contact:focus {
+    color: var(--color-hover);  
 }
+
+
 
 /* main  - title */
 
@@ -178,24 +193,23 @@ ul {
 }
 
 .assets__list {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
     list-style-type: none;
     gap: 30px;
     line-height: 1.6;
 }
 
-.assets__list svg {
+.icon__box {
     background-color: #F5F4FA;
-    border-radius: 4px;
+    border-radius: 4px solid black;
 }
 
-.title__asset {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.14;
+.icon {
+    width: 270px;
+    height: 120px;
 }
+
+
 
 .text__item {
     color: var(--color-text);
@@ -226,20 +240,21 @@ ul {
     gap: 30px;
 }
 
-/* our team */
+/* main - our team */
 
 .team {
     background-color: #F5F4FA;
 }
 
 .team__list {
-    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    list-style-type: none;
+    width: 270px;
+    gap: 30px;
 }
 
 .team__item {
-    height: 368px;
+    height: auto;
     width: 270px;
     line-height: 1.6;
     font-size: 16px;
@@ -261,28 +276,55 @@ ul {
     color: var(--color-text);
     text-align: center;
     letter-spacing: 00.03em;
-    
 }
 
-.social_item {
-    
-}
-
-/* Our clients */
-
-.client__list {
+.social__box {
     display: flex;
+    list-style-type: none;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social__box svg {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social__box svg {
+    fill: var(--color-text);
+}
+
+.social__box svg:hover,
+.social__box svg:focus {
+    fill: var(--color-second);
+    background-color: var(--background-hover);
+}
+
+/* main - our clients */
+
+.client__box {
+    display: flex;
+    list-style-type: none;
     gap: 30px;
 }
 
 .client__item {
-    list-style-type: none;
+    display: flex;
+    width: 170px;
+    height: 92px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    fill: var(--color-text);
+
 }
 
-/* PORTFOLIO SITE*/
+
+--------------------/* PORTFOLIO SITE*/--------------------------
 
 /* menu buttons */
 
@@ -365,6 +407,7 @@ ul {
 /* footer */
 
 .footer {
+    display: flex;
     background-color: var(--background-dark);
 }
 
@@ -380,6 +423,8 @@ ul {
     font-style: normal;
     list-style-type: none;
     padding: 20px 0 0 0;
+    width: 246px;
+    height: 81px;
 }
 
 .address__item {
@@ -394,7 +439,6 @@ ul {
 .address__link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    
 }
 
 .address__link:hover,
@@ -402,4 +446,14 @@ ul {
 .bottom__link:hover,
 .bottom__link:focus {
     color: var(--color-hover);
+}
+
+.subtitle__footer {
+    color: var(--color-second);
+}
+
+
+.social__footer {
+    width: 206px;
+    height: 80px;
 }
