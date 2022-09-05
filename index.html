@@ -50,44 +50,43 @@
 					</ul>
 				</nav>
 				<ul class="address__top">
-					<li>
+					<li class="contact__item">
+						<svg width="16px" height="12px">
+							<use href="./images/icons.svg#icon-envelope"></use>
+						</svg>
 						<a
-							class="top__item"
+							class="links top__item"
 							href="mailto:info@devstudio.com"
 							target="_blank"
 							rel="noreferrer nofollow noopener"
+							>info@devstudio.com</a
 						>
-							<svg class="icon__contact" width="16" height="12">
-								<use href="./images/icons.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
 					</li>
-					<li>
-						<a class="top__item" href="tel:+48111111111">
-							<svg class="icon__contact" width="10" height="16">
-								<use href="./images/icons.svg#icon-smartphone"></use>
-							</svg>
+					<li class="contact__item">
+						<svg width="10px" height="16px">
+							<use href="./images/icons.svg#icon-smartphone"></use>
+						</svg>
+						<a class="links top__item" href="tel:+48111111111">
 							+48 111 111 111
 						</a>
 					</li>
 				</ul>
 			</div>
 		</header>
-		<main class="main">
-			<div class="main__title">
-				<section class="title__container container">
-					<h1 class="main__text">
-						EFEKTYWNE ROZWIĄZANIA <br />
-						DLA WASZEGO BIZNESU
-					</h1>
-					<form>
+		<main>
+			<section class="background-color-second">
+				<div class="main__title">
+					<div class="title__container container">
+						<h1 class="main__text">
+							EFEKTYWNE ROZWIĄZANIA <br />
+							DLA WASZEGO BIZNESU
+						</h1>
 						<button class="button main__button" type="button">
 							zamów usługę
 						</button>
-					</form>
-				</section>
-			</div>
+					</div>
+				</div>
+			</section>
 			<section class="assets section container">
 				<ul class="assets__list">
 					<li>
@@ -209,7 +208,7 @@
 							<p class="team__profession">Product Designer</p>
 							<ul class="social__box">
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -222,7 +221,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -235,7 +234,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -248,7 +247,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -272,7 +271,7 @@
 							<p class="team__profession">Frontend Developer</p>
 							<ul class="social__box">
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -285,7 +284,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -298,7 +297,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -311,7 +310,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -335,7 +334,7 @@
 							<p class="team__profession">Marketing</p>
 							<ul class="social__box">
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -348,7 +347,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -361,7 +360,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="icon__social" href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -374,7 +373,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -398,7 +397,7 @@
 							<p class="team__profession">UI Designer</p>
 							<ul class="social__box">
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -411,7 +410,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -424,7 +423,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -437,7 +436,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="">
+									<a class="links" href="">
 										<svg>
 											<use
 												width="20"
@@ -458,80 +457,76 @@
 				<div class="container section">
 					<h2 class="section__title">Nasi klienci</h2>
 					<ul class="client__box">
-						<li>
-							<a class="client__item" href="">
-								<svg class="icon__client">
+						<li class="icon__client">
+							<a href="">
+								<svg>
 									<use
 										width="106"
 										height="60.04"
-										x="32"
-										y="16"
-										href="./images/icons.svg#icon-logo-1"
+										href="/images/icons.svg#icon-logo-1"
 									></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="client__item" href="">
+							<a href="">
 								<svg class="icon__client">
 									<use
 										width="106"
 										height="60.04"
-										x="32"
-										y="16"
-										xlink:href="./images/icons.svg#icon-logo-2"
+										href="/images/icons.svg#icon-logo-2"
 									></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="client__item" href="">
+							<a href="">
 								<svg class="icon__client">
 									<use
 										width="106"
 										height="60.04"
 										x="32"
 										y="16"
-										xlink:href="./images/icons.svg#icon-logo-3"
+										href="/images/icons.svg#icon-logo-3"
 									></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="client__item" href="">
+							<a href="">
 								<svg class="icon__client">
 									<use
 										width="106"
 										height="60.04"
 										x="32"
 										y="16"
-										xlink:href="./images/icons.svg#icon-logo-4"
+										href="/images/icons.svg#icon-logo-4"
 									></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="client__item" href="">
+							<a href="">
 								<svg class="icon__client">
 									<use
 										width="106"
 										height="60.04"
 										x="32"
 										y="16"
-										xlink:href="./images/icons.svg#icon-logo-5"
+										href="/images/icons.svg#icon-logo-5"
 									></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="client__item" href="">
+							<a href="">
 								<svg class="icon__client">
 									<use
 										width="106"
 										height="60.04"
 										x="32"
 										y="16"
-										xlink:href="./images/icons.svg#icon-logo-6"
+										href="../images/icons.svg#icon-logo-6"
 									></use>
 								</svg>
 							</a>
@@ -542,12 +537,16 @@
 		</main>
 		<footer class="footer">
 			<div class="container contact__box">
-				<a class="logo logo__bottom" href="https://www.devstudio.com"
-					><b><span class="logo__item">Web</span>Studio</b></a
-				>
-				<address>
+				<div class="address">
 					<ul class="contact__list">
-						<li class="address__item">m. Warszawa, Aleje Jerozolimskie 21</li>
+						<li>
+							<a class="logo logo__bottom" href="https://www.devstudio.com"
+								><b><span class="logo__item">Web</span>Studio</b></a
+							>
+						</li>
+						<li class="address__item bottom__item">
+							m. Warszawa, Aleje Jerozolimskie 21
+						</li>
 						<li class="bottom__item">
 							<a
 								class="address__link"
@@ -564,64 +563,64 @@
 							>
 						</li>
 					</ul>
-					<div class="social__footer">
-						<h4 class="subtitle subtitle__footer">DOŁĄCZ DO NAS</h4>
-						<ul class="social__box">
-							<li>
-								<a href="">
-									<svg>
-										<use
-											width="20"
-											height="20"
-											x="12"
-											y="12"
-											href="./images/icons.svg#icon-instagram-2"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<svg>
-										<use
-											width="20"
-											height="20"
-											x="12"
-											y="12"
-											href="./images/icons.svg#icon-twitter-1"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<svg>
-										<use
-											width="20"
-											height="20"
-											x="12"
-											y="12"
-											href="./images/icons.svg#icon-facebook-1"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<svg>
-										<use
-											width="20"
-											height="20"
-											x="12"
-											y="12"
-											href="./images/icons.svg#icon-linkedin-1"
-										></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</address>
+				</div>
+				<div class="social_media">
+					<h4 class="subtitle subtitle__footer">DOŁĄCZ DO NAS</h4>
+					<ul class="social__box social__box--footer">
+						<li>
+							<a href="">
+								<svg>
+									<use
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+										href="./images/icons.svg#icon-instagram-2"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg>
+									<use
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+										href="./images/icons.svg#icon-twitter-1"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg>
+									<use
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+										href="./images/icons.svg#icon-facebook-1"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg>
+									<use
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+										href="./images/icons.svg#icon-linkedin-1"
+									></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</body>

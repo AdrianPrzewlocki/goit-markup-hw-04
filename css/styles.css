@@ -11,6 +11,7 @@
 :root {
     --background-hover: #2196F3;
     --background-dark: #2F303A;
+    --background-title: #2F303A66;
     --background-color: #FFF;
     --color-primary: #212121;
     --color-text: #757575;
@@ -112,32 +113,40 @@ ul {
     gap: 50px;
 }
 
-.top__item {
+.contact__item {
     display: flex;
+    align-items: center;
     color: var(--color-text);
     text-decoration: none;
+    gap:10px
 }
 
-.icon__contact {
-    margin-right: 10px;
+.top__item {
+    text-decoration: none;
     color: var(--color-text);
 }
 
-.top__item:hover,
-.top__item:focus,
-.icon__contact:hover,
-.icon__contact:focus {
-    color: var(--color-hover);  
+.contact__item:hover {
+    fill: var(--color-hover);
 }
 
-
+.contact__item:hover .links {
+    color:var(--color-hover);
+}
 
 /* main  - title */
 
 .main__title {
-    background-image: url('/images/image_background.jpg');
-    background-size: cover;
-    box-shadow: inset rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient(
+        var(--background-title), 
+        var(--background-title)),
+        url(/images/image_background.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.background-color-second {
+    background: var(--background-dark);
 }
 
 .title__container {
@@ -186,12 +195,6 @@ ul {
     padding-bottom: 0;
 }
 
-.assets__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
 .assets__list {
     display: flex;
     list-style-type: none;
@@ -202,6 +205,7 @@ ul {
 .icon__box {
     background-color: #F5F4FA;
     border-radius: 4px solid black;
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -293,16 +297,19 @@ ul {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     
 }
 
-.social__box svg {
+.links {
     fill: var(--color-text);
 }
 
+.links:hover {
+    fill: var(--color-second);
+}
 .social__box svg:hover,
 .social__box svg:focus {
-    fill: var(--color-second);
     background-color: var(--background-hover);
 }
 
@@ -314,17 +321,15 @@ ul {
     gap: 30px;
 }
 
-.client__item {
-    display: flex;
+.icon__client {
     width: 170px;
     height: 92px;
+    border-radius: 4px;
     border: 1px solid #AFB1B8;
-    fill: var(--color-text);
-
 }
 
 
---------------------/* PORTFOLIO SITE*/--------------------------
+/* --------------------PORTFOLIO SITE-------------------------- */
 
 /* menu buttons */
 
@@ -353,6 +358,9 @@ ul {
 .btn__item:focus {
     color: var(--color-second);
     background-color: var(--background-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* photo box */
@@ -370,6 +378,14 @@ ul {
     margin: 0;
     background: var(--background-color);
     
+}
+
+.main__portfolio:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .main__photo {
@@ -400,7 +416,8 @@ ul {
     line-height: 1.875;
 }
 
-.title__box--color:hover, .title__box--color:focus {
+.title__box--color:hover, 
+.title__box--color:focus {
     color: var(--color-hover);
 }
 
@@ -409,22 +426,24 @@ ul {
 .footer {
     display: flex;
     background-color: var(--background-dark);
+    padding: 60px 0;
 }
 
 .contact__box {
-    padding: 60px 0;
+    display: flex;
+    align-items: flex-start;
+
 }
 
 .logo__bottom {
     color: var(--color-second);
-}
+    padding-bottom: 20px;
+    }
+
 
 .contact__list {
     font-style: normal;
     list-style-type: none;
-    padding: 20px 0 0 0;
-    width: 246px;
-    height: 81px;
 }
 
 .address__item {
@@ -433,12 +452,14 @@ ul {
     cursor: pointer;
 }
 
-.bottom__item {
-    padding: 20px 0 0 0;
-}
+
 .address__link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+.bottom__item {
+    padding-bottom: 9px;
 }
 
 .address__link:hover,
@@ -448,12 +469,17 @@ ul {
     color: var(--color-hover);
 }
 
+.social_media {
+    padding-left: 70px;
+}
+
 .subtitle__footer {
+    font-style: normal;
     color: var(--color-second);
 }
 
-
-.social__footer {
-    width: 206px;
-    height: 80px;
+.social__box--footer svg {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--color-second);
+    
 }
